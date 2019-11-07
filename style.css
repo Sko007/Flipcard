@@ -4,6 +4,24 @@
 
 }
 
+#textarea1{
+    width:40%;
+    height:100px;
+
+}
+
+
 button{
     display:block;
+}
+
+#input{
+    width:40%;
+    height:50px;
+
+}
+#input1{
+    width:40%;
+    height:50px;
+
 }
