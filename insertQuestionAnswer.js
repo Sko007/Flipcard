@@ -4,23 +4,23 @@ buttonInsert = document.getElementById("button");
 
 //check or insert
 
-function checkFields (){
-    if (questionBox.value == "" || answerBox.value == ""){
+// function checkFields (){
 
-        alert("Please fill text in Questionfield or Answerfield")
-    }
-    else{
-        const newQuestion = { 
-            question: questionBox.value,
-            answer: answerBox.value
-        };
+//     if (questionBox.value == "" || answerBox.value == ""){
 
-        console.log(newQuestion)
-        question_answer.push(newQuestion);
-        console.log(question_answer)
+//         alert("Please fill text in Questionfield and Answerfield")
+//     }
+//     else{
+//         const newQuestion = { 
+//             question: questionBox.value,
+//             answer: answerBox.value
+//         };
+
+//         newObj.push(newQuestion);
+//         console.log(question_answer)
     
        
 
-    }
+//     }
 
-}
+// }

@@ -7,28 +7,30 @@ let question_answer =   [
                         ];
 
 
-let answerStore =[];
-let questionStore =[];
 
 
 
-let textbox = document.getElementById("textarea");
+
+let question = document.getElementById("1");
+let answer = document.getElementById("2");
+
+
 
 
 //creating random question find answers and push into new Array
 
 function changeQuestion(){
 
-    let randomNumber = Math.floor(Math.random()*2);
-    let randomQuestion= question_answer[randomNumber].question;
-    questionStore = []
-    questionStore.push(randomQuestion);
+    let randomNumber = Math.floor(Math.random()*question_answer.length );
 
-    textbox.innerHTML = randomQuestion;
+        // random question
 
+    let randomQuestion = question_answer[randomNumber].question;
+    question.innerHTML = randomQuestion;
+
+        // random answer
     let randomAnswer = question_answer[randomNumber].answer;
-    answerStore = []
-    answerStore.push(randomAnswer);
+    answer.innerHTMl = randomNumber
 
     
 
@@ -37,13 +39,11 @@ function changeQuestion(){
 
 function showAnswer(){
     
-textbox.innerHTML ="Q:" + questionStore +"\n\n"+ "A:" + answerStore;  
+p1.innerHTML ="Q:" + questionStore +"\n\n"+ "A:" + answerStore;  
 answerStore =[];
 questionStore =[];
 
 }
-
-
 
 
 
